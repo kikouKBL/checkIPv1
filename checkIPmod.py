@@ -28,10 +28,10 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 def do_help(program):
-    print "\nUsage: "+program+" --networks=192.168.1.0/24,193.168.1.0/24 --ipAddr=192.168.1.1,193.168.1.1"
+    print "\nUsage: "+program+" --network=192.168.1.0/24 --network=193.168.1.0/24 --ipAddr=192.168.1.1 --ipAddr=193.168.1.1"
     print """ Mandatory arguments 
-  -n, --networks=CIDR	list of networks
-  -a, --ipAddr=IP	list IPs
+  -n, --network=CIDR	networks to check the IPs against
+  -a, --ipAddr=IP	list of IP to check into the networks
 """
     sys.exit()
 
