@@ -5,7 +5,7 @@ This is a small python routine to make some checking around IP and Networks/subn
 
   - runninng on pythin 2.x
   - for Ubuntu linux
-  - 
+  - download the py and just run it !
 
 # How to run it!
 
