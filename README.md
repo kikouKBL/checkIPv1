@@ -3,14 +3,14 @@
 
 This is a small python routine to make some checking around IP and Networks/subnetworks
 
-  - runninng on pythin 2.x
+  - runninng on python 2.x
   - for Ubuntu linux
   - download the py and just run it !
 
 # How to run it!
 
-  - As sudo (cause some packges will be isnatlled if necessary)
-  - run the followig command
+  - As sudo (cause some apt packages will be installed if necessary)
+  - then run the followig command
 
 
 ```sh
