@@ -13,7 +13,8 @@ This is a small python routine to make some checking around IP and Networks/subn
   - run the followig command
 
 
->> python checkIPmod.py --network=192.168.1.0/24 --network=192.170.1.0/24 --ipaddr=192.168.1.1 --ipaddr=192.170.1.1
+```sh
+python checkIPmod.py --network=192.168.1.0/24 --network=192.170.1.0/24 --ipaddr=192.168.1.1 --ipaddr=192.170.1.1
 23/08/2017 19:50:12 - check Ip - INFO:  ----- Import netifaces if not available -----
 23/08/2017 19:50:12 - check Ip - INFO:  ----- Import netaddr if not available -----
 23/08/2017 19:50:12 - check Ip - INFO:  Network (192.168.1.0/24) is in CIDR presentation format
@@ -31,3 +32,4 @@ This is a small python routine to make some checking around IP and Networks/subn
 23/08/2017 19:50:12 - check Ip - INFO:  Address (192.170.1.1) is in network
 192.170.1.1
 
+```
