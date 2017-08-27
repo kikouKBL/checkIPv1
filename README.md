@@ -10,7 +10,7 @@ This is a small python routine to make some checking around IP and Networks/subn
 # How to run it!
 
   - As sudo (cause some apt packages will be installed if necessary)
-  - then launch the followig command
+  - Launch the followig command to check if an IP belongs to a list of subnets ..
 
 
 ```sh
@@ -33,3 +33,18 @@ python checkIPmod.py --network=192.168.1.0/24 --network=192.170.1.0/24 --ipaddr=
 192.170.1.1
 
 ```
+  - Launch the followig command to check if list of nets are subnets of eachother ...
+
+
+```sh
+python checkSubnetInNet.py --network=192.168.2.1/24 --network=192.168.1.1/16 --network=192.170.1.0/24      
+27/08/2017 23:38:13 - check Ip - INFO: Check range of IPs in subnet (192.168.2.1/24) against all other subnets 
+27/08/2017 23:38:13 - check Ip - INFO: 192.168.2.1/24 Net in Subnet 192.170.1.0/24 ? : False 
+27/08/2017 23:38:13 - check Ip - INFO: 192.168.2.1/24 Net in Subnet 192.168.1.1/16 ? : True 
+27/08/2017 23:38:13 - check Ip - INFO: Check range of IPs in subnet (192.170.1.0/24) against all other subnets 
+27/08/2017 23:38:13 - check Ip - INFO: 192.170.1.0/24 Net in Subnet 192.168.2.1/24 ? : False 
+27/08/2017 23:38:13 - check Ip - INFO: 192.170.1.0/24 Net in Subnet 192.168.1.1/16 ? : False 
+27/08/2017 23:38:13 - check Ip - INFO: Check range of IPs in subnet (192.168.1.1/16) against all other subnets 
+27/08/2017 23:38:13 - check Ip - INFO: 192.168.1.1/16 Net in Subnet 192.168.2.1/24 ? : False 
+27/08/2017 23:38:13 - check Ip - INFO: 192.168.1.1/16 Net in Subnet 192.170.1.0/24 ? : False 
+
