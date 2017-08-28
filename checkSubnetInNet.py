@@ -34,7 +34,6 @@ def do_help(program):
 """
     sys.exit()
 
-
 def get_IpToInteger(ipAddress):
     """
     """
