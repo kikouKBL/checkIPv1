@@ -10,7 +10,7 @@ This is a small python routine to make some checking around IP and Networks/subn
 # How to run it!
 
   - As sudo (cause some apt packages will be installed if necessary)
-  - Launch the followig command to check if an IP belongs to a list of subnets ..
+  - Launch the followig command to check if an IPv4 belongs to a list of subnets ..
 
 
 ```sh
@@ -33,7 +33,7 @@ python checkIPmod.py --network=192.168.1.0/24 --network=192.170.1.0/24 --ipaddr=
 192.170.1.1
 
 ```
-  - Launch the followig command to check if list of nets are subnets of eachother ...
+  - Launch the followig command to check if list of nets (IPv4 network addresses) are subnets of eachother ...
 
 
 ```sh
